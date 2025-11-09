@@ -15,11 +15,58 @@ class Ui_MainWindow(object):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1012, 589)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setStyleSheet("QWidget#centralwidget {\n"
+"    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,\n"
+"                                stop:0 #1a1a2e, stop:0.5 #16213e, stop:1 #0f3460);\n"
+"}\n"
+"\n"
+"QLabel#label_2 {\n"
+"    color: #f39c12;\n"
+"    font-weight: bold;\n"
+"    background: transparent;\n"
+"}\n"
+"\n"
+"QLineEdit {\n"
+"    background-color: rgba(255, 255, 255, 0.9);\n"
+"    border: 3px solid #e74c3c;\n"
+"    border-radius: 10px;\n"
+"    padding: 5px;\n"
+"    color: #2c3e50;\n"
+"    font-weight: bold;\n"
+"}\n"
+"\n"
+"QLineEdit:focus {\n"
+"    border: 3px solid #f39c12;\n"
+"    background-color: rgba(255, 255, 255, 1);\n"
+"}\n"
+"\n"
+"QPushButton {\n"
+"    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,\n"
+"                                stop:0 #e74c3c, stop:1 #c0392b);\n"
+"    color: white;\n"
+"    border: none;\n"
+"    border-radius: 10px;\n"
+"    font-weight: bold;\n"
+"    padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,\n"
+"                                stop:0 #f39c12, stop:1 #e67e22);\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,\n"
+"                                stop:0 #c0392b, stop:1 #e74c3c);\n"
+"}")
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(77, 180, 831, 311))
         self.label.setStyleSheet("background-image:url(:/Prefix1/board.png);\n"
-"background-repeat:no-repeat;")
+"background-repeat:no-repeat;\n"
+"border: 4px solid #f39c12;\n"
+"border-radius: 15px;\n"
+"background-color: rgba(255, 255, 255, 0.05);")
         self.label.setText("")
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
@@ -153,7 +200,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label_2.setText(_translate("MainWindow", "请输入和弦名称："))
-        self.pushButton.setText(_translate("MainWindow", "查询"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "🎵 Chord Query - Music Explorer 🎹"))
+        self.label_2.setText(_translate("MainWindow", "♫ 请输入和弦名称 ♪"))
+        self.pushButton.setText(_translate("MainWindow", "🎵 查询"))
 import src_rc
