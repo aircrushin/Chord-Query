@@ -271,6 +271,8 @@ body::before {
 
 .piano-shell {
   overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 2px 12px;
 }
 
 .piano {
@@ -363,9 +365,10 @@ body::before {
 .legend {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 16px 20px;
   margin: 14px 4px 2px;
   font-size: 12px;
+  line-height: 1.5;
 }
 
 .swatch {
